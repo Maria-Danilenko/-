@@ -14,7 +14,6 @@ tab2 = None
 tabNames = ""
 tab_names_list = []
 
-
 def folder():
     global path
     path = os.getcwd()
@@ -203,17 +202,17 @@ def keypress(e):
         redo()
 
 def undo():
-    window.event_generate("<<Undo>>")
+    txt.event_generate("<<Undo>>")
 def redo():
-    window.event_generate("<<Redo>>")
+    txt.event_generate("<<Redo>>")
 def copy():
-    window.event_generate("<<Copy>>")
+    txt.event_generate("<<Copy>>")
 def cut():
-    window.event_generate("<<Cut>>")
+    txt.event_generate("<<Cut>>")
 def paste():
-    window.event_generate("<<Paste>>")
+    txt.event_generate("<<Paste>>")
 def select_all():
-    window.event_generate("<<SelectAll>>")
+    txt.event_generate("<<SelectAll>>")
 
 def openFile():
     global path, chBox_list, var_list, fileName_list, txt, tab_names_list
